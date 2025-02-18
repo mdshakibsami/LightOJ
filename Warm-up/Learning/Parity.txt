@@ -1,0 +1,8 @@
+Counting number of 1 in binary representation of a decimal number 
+
+        while (n > 0)
+        {
+            if (n & 1)
+                ans++;
+            n /= 2;
+        }

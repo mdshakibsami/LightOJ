@@ -1,0 +1,26 @@
+// to split using string stream
+        
+        stringstream ss(s);
+
+        while (getline(ss,part,'.'))
+        {
+            v.push_back(stoll(part));  // string to long long 
+        }
+________________________________________________________________________________________________________________
+
+1. stringstream ss(s);
+    * This creates a stringstream object from the string s.
+    * It allows us to extract parts of the string easily, similar to how we handle input (cin).
+
+2. while (getline(ss, part, '.'))
+
+    * Extracts each part of s, splitting at . (dot).
+    * getline() reads until it finds the delimiter (.), stores the result in part, and moves to the next section.
+__________________________________________________________________________________________________________________
+
+3. stoll(part)  => string to long long
+
+4. bitset<8>(part).to_ulong();
+    * Converts a binary string into a decimal number.
+    * bitset<8>(part) creates a binary representation of part.
+    * .to_ulong() converts the binary representation into a decimal unsigned long.

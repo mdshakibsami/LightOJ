@@ -1,0 +1,6 @@
+Here is the list of Data Structure I used :
+1. Array
+2. Stack
+3. Dequeue
+4. Vector
+5. Map
